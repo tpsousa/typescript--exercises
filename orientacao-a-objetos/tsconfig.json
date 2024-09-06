@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                          // Define a versão do ECMAScript para a qual o TypeScript será compilado
+    "module": "commonjs",                     // Define o sistema de módulo. Para Node.js, geralmente é 'commonjs'
+    "rootDir": "./src",                       // Diretório raiz dos arquivos de origem
+    "outDir": "./dist",                       // Diretório onde os arquivos compilados serão colocados
+    "strict": true,                           // Ativa verificações rigorosas de tipo
+    "esModuleInterop": true                   // Habilita a interoperabilidade entre CommonJS e módulos ES
+  },
+  "include": ["src/**/*.ts"],                 // Arquivos a serem incluídos na compilação
+  "exclude": ["node_modules"]                 // Exclui a pasta node_modules
+}

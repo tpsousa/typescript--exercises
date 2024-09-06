@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es6",                           // Define a versão do ECMAScript para a qual o código será compilado.
+    "module": "commonjs",                      // Especifica o sistema de módulos (CommonJS, ESNext, etc.).
+    "strict": true,                            // Habilita todas as verificações de tipo estritas.
+    "esModuleInterop": true,                   // Garante a compatibilidade de importação/exportação entre módulos CommonJS e ES.
+    "forceConsistentCasingInFileNames": true,  // Impede problemas relacionados ao uso inconsistente de letras maiúsculas/minúsculas.
+    "skipLibCheck": true,                      // Ignora a verificação de tipos em arquivos de declaração de tipo.
+    "outDir": "./dist",                        // Diretório onde os arquivos compilados serão colocados.
+    "rootDir": "./src",                        // Diretório raiz dos arquivos de origem.
+    "resolveJsonModule": true,                 // Permite a importação de arquivos JSON como módulos.
+    "sourceMap": true                          // Gera arquivos `.map` para facilitar o debugging.
+  },
+  "include": [
+    "src/**/*"                                 // Especifica quais arquivos serão incluídos na compilação.
+  ],
+  "exclude": [
+    "node_modules",                            // Especifica os arquivos/pastas a serem excluídos da compilação.
+    "dist"                                     // Evita compilar arquivos gerados no `outDir`.
+  ]
+}
